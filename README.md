@@ -1,0 +1,1 @@
+# Mongoose Schemas for use in Git Submodules
