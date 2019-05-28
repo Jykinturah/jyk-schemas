@@ -7,19 +7,18 @@ module.exports = function(mongoose) {
     // Every update, update total Sum.
     count_total:      Number,
     // Every Day, keep one count per day and sum it
-    current_month:    Number,
-    count_day:    { 
+    current_year:     Number,
+    count_day:    {
       type: Map,
       of:   Number
     },
     // Every Month, aggregate count by Month
-    current_year:     Number,
-    count_month:  { 
+    count_month:  {
       type: Map,
       of:   Number
     },
     // Every Year, aggregate count by Year
-    count_year:  { 
+    count_year:   {
       type: Map,
       of:   Number
     }
