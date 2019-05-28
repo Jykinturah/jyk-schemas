@@ -1,16 +1,19 @@
 module.exports = function(mongoose) {
 
   var wordCountSchema = new mongoose.Schema({
-    discord_id:     String,
-    reminder_time:  String,
+    discord_id:       String,
+    reminder_time:    String,
+    reminder_enable:  Boolean,
     // Every update, update total Sum.
-    count_total:    Number,
+    count_total:      Number,
     // Every Day, keep one count per day and sum it
+    current_month:    Number,
     count_day:    { 
       type: Map,
       of:   Number
     },
     // Every Month, aggregate count by Month
+    current_year:     Number,
     count_month:  { 
       type: Map,
       of:   Number
