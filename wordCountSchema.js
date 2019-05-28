@@ -22,5 +22,5 @@ module.exports = function(mongoose) {
     }
   });
 
-  return mongoose.model('wordCounts', wordCountSchema);
+  return mongoose.model('wordCount', wordCountSchema);
 };
