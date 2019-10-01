@@ -1,4 +1,4 @@
-module.exports = function(mongoose) {
+module.exports = function(mongoose,bcrypt) {
 
   var shortUserSchema = new mongoose.Schema({
     username: {
